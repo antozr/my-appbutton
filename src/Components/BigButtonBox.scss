@@ -1,0 +1,95 @@
+
+
+.bigButton{
+    height: 800px;
+    width: 100%;
+    max-width: 810px;
+    min-width: 300px;
+
+    &__list{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        row-gap: 45px;
+        column-gap: 45px;
+        width: 100%;
+        height: 100%;
+        list-style: none;
+    }
+
+    &__el{
+        height: 60px;
+        width: 168px;
+    }
+
+    &__pry{
+        margin: 12px 0 0 0 ;
+        padding: 8px 16px;
+        border-radius: 6px;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        border: none;
+        background-color: #2962FF;
+        color: #ffffff;
+
+        &--hov{
+
+            background-color: #0039CB;
+            
+        }
+    }
+    &__sec{
+        margin: 12px 0 0 0 ;
+        padding: 8px 16px;
+        border-radius: 6px;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        border: none;
+        background: #455A64;
+        color: #ffffff;
+
+        &--hover{
+            background: #1C313A;
+
+        }
+    }
+    &__dan{
+        margin: 12px 0 0 0 ;
+        padding: 8px 16px;
+        border-radius: 6px;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        border: none;
+        background: #D32F2F;
+        color: #ffffff;
+
+        &--hover{
+            background-color: #9A0007;
+        }
+    }
+
+
+}
+
+@media(min-width:700px){
+    .bigButton{
+        height: 205px;
+        width: 100%;
+        max-width: 810px;
+        min-width: 300px;
+    
+        &__list{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            row-gap: 45px;
+            column-gap: 45px;
+            width: 100%;
+            height: 100%;
+            list-style: none;
+        }
+    }
+}
