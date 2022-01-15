@@ -1,18 +1,19 @@
 
 .buttonPage{
-    width: 100%;
-    height: 300vh;
+    width: calc(100% - 12px);
+    height: 210vh;
     padding: 53px 0 0 12px;
     
 }
 
 
-@media(min-width:700px){
+@media(min-width:1000px){
 
     .buttonPage{
         width: 100%;
         height: 100vh;
         padding: 53px 0 0 83px;
+        margin: 0 0 0 350px;
         
     }
 }

@@ -9,6 +9,18 @@ import './Navbar.scss';
 
 
 function Navbar() {
+
+    function openBtn(){
+        console.log('hello');
+        let nav = document.querySelector('.navbar__list');
+
+        if(nav.classList.contains('navbar__list--actif')){
+            nav.classList.remove('navbar__list--actif');
+        }else{
+            nav.classList.add('navbar__list--actif');
+        }
+    }
+
     return (
         <div className='navbar'>
             <p className="navbar__title">
@@ -49,6 +61,11 @@ function Navbar() {
                     </Link>
                 </li>
             </ul>
+            <div className="navbar__btnClo" onClick={openBtn}>
+                <div className="navbar__btnBox"></div>
+                <div className="navbar__btnBox"></div>
+                <div className="navbar__btnBox"></div>
+            </div>
         </div>
     )
 }
