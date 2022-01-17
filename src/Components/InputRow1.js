@@ -196,7 +196,7 @@ function InputRow1() {
                 <p className="firstButtonBox__txt inputSize__txt">
                     {"<Input multiline row=”4” />"}
                 </p>
-                <label htmlFor="" className="inputRow__label inputSize__label">
+                <label htmlFor="" className="inputRow__label ">
                     Label
                 </label>
                 <textarea rows="4"  placeholder='Placeholder' className="inputText__textarea" />
