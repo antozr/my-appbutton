@@ -1,0 +1,77 @@
+
+
+.inputGrid{
+
+    &__list{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        margin: 42px 0 0 0 ;
+        height: 420px;
+        justify-content: space-between;
+    }
+    &__txt{
+        font-family: Noto Sans JP;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 14px;
+        height: 14px;
+        color: #828282;
+        &--error{
+            color: #D32F2F;
+        }
+    }
+    &__label{
+
+        &--error{
+            color: #D32F2F;
+        }
+    }
+    &__input{
+
+        &--error{
+            border: 1px solid #D32F2F;
+        }
+    }
+}
+
+
+@media(min-width:1000px){
+
+
+    .inputGrid{
+
+        &__list{
+            width: 660px;
+            height: 350px;
+            display: grid;
+            grid-template-columns: repeat(2, 300px);
+            
+            grid-template-rows: auto;
+            row-gap: 0px;
+            grid-template-areas:
+            "b1  ."
+            "b2 b3" ;
+
+        }
+        &__el{
+            width: 300px;
+            height: 155px;
+            display: flex;
+            flex-direction: column;
+        }
+        &__el > input {
+            width: 200px;
+            height: 56px;
+        }
+    }
+    .b1{
+        grid-area: b1;
+    }
+    .b2{
+        grid-area: b2;
+    }
+    .b3{
+        grid-area: b3;
+    }
+}

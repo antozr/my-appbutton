@@ -1,0 +1,142 @@
+
+
+.inputRow{
+
+    &__list{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        flex-wrap: wrap;
+        row-gap: 32px;
+        column-gap: 70px;
+        width: 100%;
+        height: 820px;
+        margin: 65px 0 0 0 ;
+    }
+
+    &__el{
+        width: 90vw;
+        height: 102px;
+    }
+    &__el > p{
+        margin: 0 0 12px 0 ;
+    }
+    &__label{
+        font-family: 'Noto Sans JP', sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        color: #333333;
+        margin: 16px 0 0 0 ;
+
+        &--bleu{
+            color: #2962FF;
+        }
+        &--error{
+            color: #D32F2F;
+        }
+    }
+    &__txtH{
+        color: #828282;
+    }
+    &__input{
+        width: calc(100% - 12px);
+        height: 56px;
+        padding: 0 0 0 12px;
+        margin: 4px 0 0 0 ;
+        border-radius: 8px;
+        border: 1px solid #828282;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        color: #828282;
+
+        &--focus1{
+            border: 1px solid #2962FF;
+        }
+        &--focus1:focus{
+            border: 1px solid #2962FF;
+        }
+        &--error{
+            border: 1px solid #D32F2F;
+        }
+        &--disabled{
+            border: 1px solid #e0e0e0;
+            background-color: #F2F2F2;
+
+        }
+    }
+    &__input--hover1{
+        border: 1px solid #333333;
+    }
+}
+
+
+
+@media(min-width: 1000px){
+
+    .inputRow{
+
+        &__list{
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            flex-wrap: wrap;
+            row-gap: 42px;
+            column-gap: 70px;
+            width: 740px;
+            height: 260px;
+            margin: 65px 0 0 0 ;
+        }
+    
+        &__el{
+            width: 200px;
+            height: 102px;
+        }
+        &__el > p{
+            margin: 0 0 16px 0 ;
+        }
+        &__label{
+            font-family: 'Noto Sans JP', sans-serif;
+            font-weight: 400;
+            font-size: 12px;
+            color: #333333;
+            margin: 16px 0 0 0 ;
+
+            &--bleu{
+                color: #2962FF;
+            }
+            &--error{
+                color: #D32F2F;
+            }
+        }
+        &__input{
+            width: calc(100% - 12px);
+            height: 56px;
+            padding: 0 0 0 12px;
+            margin: 4px 0 0 0 ;
+            border-radius: 8px;
+            border: 1px solid #828282;
+            font-family: 'Noto Sans JP', sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            color: #828282;
+            &--focus1{
+                border: 1px solid #2962FF;
+            }
+            &--focus1:focus{
+                border: 1px solid #2962FF;
+            }
+            &--error{
+                border: 1px solid #D32F2F;
+            }
+            &--disabled{
+                border: 1px solid #e0e0e0;
+                background-color: #F2F2F2;
+    
+            }
+        }
+        &__input--hover1{
+            border: 1px solid #333333;
+        }
+    }
+}
